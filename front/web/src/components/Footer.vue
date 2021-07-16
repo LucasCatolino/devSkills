@@ -16,17 +16,6 @@
   </v-footer>
 </template>
 
+<script src="./Footer.js"/>
 
-<script>
-export default {
-  data: () => ({
-    icons: [
-      'mdi-linkedin',
-    ],
-  }),
-}
-</script>
-
-<style scoped>
-
-</style>
+<style scoped/>
