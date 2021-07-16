@@ -89,7 +89,6 @@
 
 var URL= "http://localhost:8081/api/members";
 
-// @ is an alias to /src
 export default {
     components:{ },
     data(){
@@ -117,12 +116,6 @@ export default {
               { text: 'SSN', value: 'ssn' },
             ],
             customers: [
-              /*{
-                name: 'df',
-                lastName: 'df',
-                address: 'df',
-                ssn: 'df',
-              }*/
             ],
           inputRules: [
             v => !!v || 'Field required',
@@ -183,24 +176,6 @@ export default {
             }
           }
         }
-
-      /*
-        save: function(){
-          this.axios.post(URL,{ firstName: this.firstName, lastName: this.lastName, address: this.addr, ssn: this.ssn }, //TODO: cambiar por JSON.stringify
-                  {headers: {"access-control-allow-origin": "*",
-                      "access-control-allow-headers": "Authorization"}}).then(
-              response => {
-                console.log("Añadido con éxito")
-                this.response = response;
-              }
-          ).catch(e =>
-              console.log(e),
-              this.errorMsg= "SSN must be unique",
-              this.snackbar= true);
-          this.getData();
-          this.reset();
-        }
-       */
     },
     mounted() {
       this.getData();

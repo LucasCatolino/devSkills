@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5df7c73-d885-4a67-afc0-6863536510b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/web/src/views/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/web/src/views/HomePage.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,7 @@
       <workItem from="1626298145926" duration="2134000" />
       <workItem from="1626304827302" duration="5233000" />
       <workItem from="1626317788161" duration="682000" />
-      <workItem from="1626355835493" duration="39099000" />
+      <workItem from="1626355835493" duration="39413000" />
     </task>
     <servers />
   </component>

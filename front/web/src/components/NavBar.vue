@@ -37,7 +37,6 @@ export default {
             { title: "Home", path: "/" },
             { title: "Other page", path: "/ups" },
         ],
-
     })
 
 }

@@ -1,3 +1,7 @@
+# Dev Skills
+
+Para ejecutar exitosamente la web deben utilizarse dos consolas por separado:
+
 Con una consola:
 * Ubicarse dentro del directorio "api"
 * Ejecutar el comando `npm install` para crear la carpeta *node modules*
