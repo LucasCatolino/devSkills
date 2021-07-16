@@ -4,9 +4,10 @@ const err = require('restify-errors')
 
 const corsMiddleware = require('restify-cors-middleware')
 const cors = corsMiddleware({
-  origins: ['*'],
-  allowHeaders: ['Authorization'],
+  origins: ['*', 'http://localhost:8080'],
+  allowHeaders: ['*'], //Cambiar esto
   exposeHeaders: ['Authorization']
+
 })
 
 server.pre(cors.preflight)
@@ -14,6 +15,7 @@ server.use(cors.actual)
 
 server.use(Restify.plugins.queryParser())
 server.use(Restify.plugins.bodyParser({ mapParams: false }))
+
 
 const url = '/api/members'
 const members = [
@@ -34,6 +36,7 @@ function validString (item) {
 }
 
 server.post(url, (req, res, next) => {
+  res.setHeader('Content-Type', 'application/Json');
   const body = req.body || {}
   const firstName = body.firstName || ''
   const lastName = body.lastName || ''
